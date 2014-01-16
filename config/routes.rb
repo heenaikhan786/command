@@ -1,4 +1,5 @@
 Command::Application.routes.draw do
+  devise_for :users
   root "page#command"
   get "home" => "page#home" #create home path
 
